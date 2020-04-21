@@ -37,3 +37,9 @@ Dessa forma o objeto calc poderá chamar qualquer método da sua interface, que 
 
  Os stubs fazem a comunicação entre o cliente e o servidor, que implementa de forma transparente uma comunicação através de sockets TCP, e implementa um protocolo de comunicação para realizar as chamadas entre os métodos e as passagens de parâmetros que são necessárias.
  
+# O exemplo em questão
+Foi implementado uma 'calculadora' com 5 métodos, 'int soma(int a, int b)', 'double soma(int double, int double)', 'double subtrai(int double, int double)', 'double divide(int double, int double)' e 'double multiplica(int double, int double)'.
+
+Dessa forma, no exemplo, o cliente se conecta e executa cada um dos métodos sem utilizar a classe, apenas através do RMI.
+
+Deixando um pouco mais simples a implementação da comunicação e do protocolo que normalmente precisa ser definido quando se usa os exemplos HTTP e socket.
